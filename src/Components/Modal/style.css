@@ -4,7 +4,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(145, 154, 150, 0.3);
+    background-color: rgb(145, 154, 150, 0.3);
     backdrop-filter: blur(4px);
 
     display: flex;
@@ -81,4 +81,40 @@
 
 .info-short-description {
     font-size: 1.4rem;
+}
+
+@media (max-width: 1050px) {
+    .modal-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 710px) {
+    .modal-box {
+        min-height: 70%;
+        padding-left: 6rem;
+    }
+
+    .modal-info {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .circular-progress {
+        left: 35%;
+    }
+
+    .product-img {
+        width: 50vw;
+        margin-bottom: 3rem;
+    }
+
+    .info-name,
+    .info-category {
+        font-size: 1.4rem;
+    }
+
+    .info-short-description {
+        font-size: 1.2rem;
+    }
 }

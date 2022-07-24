@@ -17,6 +17,7 @@ export default function Modal({ openModal, setOpenModal, info }) {
         config: { duration: showInfo ? 600 : 300, easing: easings.easeInSine }
     })
 
+
     function handleCloseModal() {
         setShowInfo(false)
         setTimeout(() => {

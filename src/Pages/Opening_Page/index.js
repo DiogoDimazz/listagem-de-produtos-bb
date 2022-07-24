@@ -18,15 +18,17 @@ function OpeningPage() {
       <section className='bottom-section'>
         <div className='contact-social'>
           <h5><span style={{ color: '#19b2c0' }}>/</span>contato</h5>
-          <ul className='text-grouping'>
-            <li className='li-text'>Rua Alfredo Gomes de Oliveira</li>
-            <li className='li-text'>n217 - Jardim Armação</li>
-            <li className='li-text'>Salvador - BA</li>
-          </ul>
-          <ul className='text-grouping'>
-            <li className='li-text'>+55 (71) 9 9229-7816</li>
-            <li className='li-text'>diogo.fullstack@gmail.com</li>
-          </ul>
+          <div>
+            <ul className='text-grouping'>
+              <li className='li-text'>Rua Alfredo Gomes de Oliveira</li>
+              <li className='li-text'>n217 - Jardim Armação</li>
+              <li className='li-text'>Salvador - BA</li>
+            </ul>
+            <ul className='text-grouping'>
+              <li className='li-text'>+55 (71) 9 9229-7816</li>
+              <li className='li-text'>diogo.fullstack@gmail.com</li>
+            </ul>
+          </div>
         </div>
         <div className='contact-social'>
           <h5><span style={{ color: 'var(--pink)' }}>/</span>social</h5>
