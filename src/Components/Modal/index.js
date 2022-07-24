@@ -9,11 +9,11 @@ export default function Modal({ openModal, setOpenModal, info }) {
     const [loadingImg, setLoadingImg] = useState(true)
     const enlargeModal = useSpring({
         from: showInfo
-            ? { minHeight: '0rem', transform: 'rotateX(90deg)', perspective: '500px' }
-            : { minHeight: '30rem', transform: 'rotateX(0deg)', perspective: '500px' },
+            ? { minHeight: '0rem', transform: 'rotateX(90deg)' }
+            : { minHeight: '30rem', transform: 'rotateX(0deg)' },
         to: showInfo
-            ? { minHeight: '30rem', transform: 'rotateX(0deg)', perspective: '500px' }
-            : { minHeight: '0rem', transform: 'rotateX(90deg)', perspective: '500px' },
+            ? { minHeight: '30rem', transform: 'rotateX(0deg)' }
+            : { minHeight: '0rem', transform: 'rotateX(90deg)' },
         config: { duration: showInfo ? 600 : 300, easing: easings.easeInSine }
     })
 

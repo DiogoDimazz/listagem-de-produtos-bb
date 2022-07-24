@@ -167,3 +167,27 @@
         font-size: 1.8rem;
     }
 }
+
+@media (max-height: 667px) {
+    .bg-photo {
+        height: 667px;
+        transform: translateY(-170px);
+    }
+}
+
+@media (max-height: 600px) {
+    .photo-container {
+        align-items: flex-end;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-height: 493px) {
+    .container {
+        height: 493px;
+    }
+
+    .photo-container {
+        height: 264px;
+    }
+}

@@ -118,3 +118,11 @@
         font-size: 1.2rem;
     }
 }
+
+@media (max-height: 574px) {
+    .modal-box {
+        width: 90vw;
+        height: 90vh;
+        overflow: scroll;
+    }
+}
