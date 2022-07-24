@@ -1,0 +1,62 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(145, 154, 150, 0.3);
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-box {
+    width: 80rem;
+    background: linear-gradient(110deg, white 70%, #a2e2e8 96%, #19b2c0 100%);
+    border-radius: 2rem;
+    box-sizing: border-box;
+
+    padding: 2rem 4rem 3rem 1rem;
+
+    position: relative;
+}
+
+.close-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    cursor: pointer;
+
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.close-icon:hover {
+    transform: scale(1.1);
+}
+
+.upper-modal-info {
+    display: flex;
+}
+
+.info-name,
+.info-category {
+    font-size: 1.8rem;
+    color: var(--dark-gray);
+    letter-spacing: 0.11rem;
+}
+
+.info-name {
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.info-category {
+    margin-bottom: 5rem;
+}
+
+.info-short-description {
+    font-size: 1.4rem;
+}

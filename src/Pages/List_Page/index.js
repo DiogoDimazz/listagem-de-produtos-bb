@@ -1,12 +1,15 @@
 import './style.css'
 import ListBox from '../../Components/List_Box'
 import downArrow from '../../assets/down_arrow.svg'
+import exit from '../../assets/exit.svg'
 import productsJson from '../../productsCategory.json'
 import { animated, easings, useChain, useSpringRef, useTransition } from 'react-spring'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function ListPage() {
     const allProducts = [...productsJson.data.nodes]
+    const navigate = useNavigate()
     const [products, setProducts] = useState([])
     const [categoryList, setCategoryList] = useState([])
     const [openFilter, setOpenFilter] = useState(false)
@@ -75,6 +78,11 @@ export default function ListPage() {
                 /
             </span>
                 Listagem de Produtos
+                <img
+                    src={exit} alt='exit'
+                    className='exit-icon'
+                    onClick={() => navigate('/')}
+                />
             </header>
             <div className='filter-div'>
                 <div className='select-box'
@@ -85,8 +93,8 @@ export default function ListPage() {
                         className='filter-btn'
                     >
                         Filtrar por categoria
+                        <img style={{ marginLeft: '1.3rem' }} src={downArrow} alt='down-arrow' />
                     </button>
-                    <img style={{ marginLeft: '0.8rem' }} src={downArrow} alt='down-arrow' />
                     {underlineMove((style, filterHover) => (
                         filterHover &&
                         <animated.div style={style} className='underline' />

@@ -4,6 +4,7 @@
 
     box-sizing: border-box;
 
+    position: relative;
 }
 
 .labels,
@@ -33,13 +34,12 @@
     margin-top: 0.3rem;
 
     cursor: pointer;
-    transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
     background-color: white;
-    background: linear-gradient(170deg, white 90%, rgba(0, 182, 209, 0) 100%);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .product-row:hover {
-    background: linear-gradient(90deg, white 5%, rgba(0, 182, 209, 0.2) 100%);
+    background-color: rgba(0, 182, 209, 0.2);
 }
 
 .p-img {

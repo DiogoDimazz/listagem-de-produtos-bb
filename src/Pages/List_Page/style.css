@@ -24,6 +24,15 @@ header {
     text-transform: uppercase;
     font-size: 2.4rem;
     letter-spacing: 0.102em;
+
+    position: relative;
+}
+
+.exit-icon {
+    position: absolute;
+    width: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
 }
 
 .filter-div {
@@ -80,7 +89,7 @@ header {
     padding: 1rem 2rem;
     white-space: nowrap;
 
-
+    z-index: 2;
 
 }
 
