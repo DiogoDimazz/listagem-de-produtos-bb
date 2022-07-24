@@ -10,31 +10,37 @@
 .labels,
 .product-row {
     display: grid;
-    grid-template-columns: 4fr 2fr 6fr;
+    grid-template-columns: 5fr 2fr 6fr;
 }
 
 .labels {
-    border-bottom: 2px solid var(--light-gray);
+    height: 5rem;
+    align-items: center;
+    border-bottom: 2px solid var(--medium-gray);
     padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.label-name {
-    margin-left: 50px;
+.label {
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    color: var(--dark-gray);
 }
 
-.label-description {
-    margin-left: 150px;
+.label-name,
+.p-name {
+    margin-left: 40px;
 }
+
 
 .product-row {
     height: 50px;
     font-size: 1.4rem;
-    border-bottom: 2px solid white;
-    margin-top: 0.3rem;
+    border-bottom: 2px solid var(--medium-gray);
 
     cursor: pointer;
-    background-color: white;
+    background-color: var(--light-gray);
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -58,7 +64,9 @@
 .p-name,
 .p-category,
 .p-description {
-    color: var(--dark-gray);
+    font-weight: lighter;
+    letter-spacing: 0.11rem;
+    color: black;
     height: 100%;
     width: 100%;
 }
@@ -68,12 +76,6 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-top: 20px;
+    padding-top: 14px;
 
-}
-
-.label {
-    font-size: 1.4rem;
-    letter-spacing: 0.1em;
-    color: var(--dark-gray);
 }

@@ -29,7 +29,7 @@ export default function ListPage() {
         from: { height: '0rem' },
         enter: { height: '30rem' },
         leave: { height: '0rem' },
-        config: { duration: 300, easing: easings.easeInSine },
+        config: { duration: 150, easing: easings.easeInSine },
         ref: filterModalRef
     })
 
@@ -37,11 +37,12 @@ export default function ListPage() {
         from: { opacity: '0' },
         enter: { opacity: '1' },
         leave: { opacity: '0' },
-        config: { duration: 300, easing: easings.easeOutCubic },
+        config: { duration: 150, easing: easings.easeOutCubic },
         ref: dissolveTransitionRef
     })
 
     function handleCategory(e) {
+        setOpenFilter(false)
         if (e.target.innerText === 'Todas as categorias') { return setProducts([...allProducts]) }
         const localArray = allProducts.filter((p) => {
             return p.category.name === e.target.innerText
@@ -60,11 +61,8 @@ export default function ListPage() {
         setCategoryList(['Todas as categorias', ...localArray])
     }
 
-    useChain(openFilter ? [filterModalRef, dissolveTransitionRef] : [dissolveTransitionRef, filterModalRef], [0, 0.3])
+    useChain(openFilter ? [filterModalRef, dissolveTransitionRef] : [dissolveTransitionRef, filterModalRef], [0, 0.15])
 
-    useEffect(() => {
-        console.log(products);
-    }, [products])
 
     useEffect(() => {
         setProducts([...allProducts])

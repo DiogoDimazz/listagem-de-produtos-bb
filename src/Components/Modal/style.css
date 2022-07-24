@@ -18,7 +18,7 @@
     border-radius: 2rem;
     box-sizing: border-box;
 
-    padding: 2rem 4rem 3rem 1rem;
+    padding: 2rem 6rem 3rem 0rem;
 
     position: relative;
 }
@@ -37,8 +37,30 @@
     transform: scale(1.1);
 }
 
-.upper-modal-info {
+.modal-info {
     display: flex;
+}
+
+.modal-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+
+.circular-progress {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.product-img {
+    width: 250px;
+    height: 100%;
 }
 
 .info-name,

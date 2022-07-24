@@ -1,10 +1,14 @@
-html {
-  font-size: 62.5%;
-
+* {
+  box-sizing: border-box;
   --pink: #E53262;
   --dark-gray: #4d4d4d;
   --medium-gray: #989898;
   --light-gray: #cfcfcf;
+}
+
+html {
+  font-size: 62.5%;
+
 }
 
 body {
